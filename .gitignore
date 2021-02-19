@@ -1,2 +1,3 @@
-.idea/
-Homework_Advanced.iml
+/.idea
+*.iml
+/out/
