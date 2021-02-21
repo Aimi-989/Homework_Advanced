@@ -1,126 +1,55 @@
 package Generics.Task_1;
 
-class Printer <T> {
+import java.util.ArrayList;
+import java.util.List;
 
-    private T print;
+public class Printer<T> {
+    private T t;
 
-    /*
-    ArrayList<T> list = new ArrayList<T>() {
-        @Override
-        public int size() {
-            return 0;
-        }
+    public void set(T t) {
+        this.t = t;
+    }
 
-        @Override
-        public boolean isEmpty() {
-            return false;
-        }
+    public T get() {
+        return t;
+    }
 
-        @Override
-        public boolean contains(Object o) {
-            return false;
-        }
+    public static void main(String[] args) {
 
-        @Override
-        public Iterator<T> iterator() {
-            return null;
-        }
+        Printer<String> stringPrinter = new Printer<>();
+        stringPrinter.set("Старая строка");
+        System.out.println(stringPrinter.get());
 
-        @Override
-        public Object[] toArray() {
-            return new Object[0];
-        }
+        Printer<Integer> integerPrinter = new Printer<>();
+        integerPrinter.set(123);
+        System.out.println(integerPrinter.get());
 
-        @Override
-        public <T1> T1[] toArray(T1[] a) {
-            return null;
-        }
+        Printer<Double> doublePrinter = new Printer<>();
+        doublePrinter.set(1.1);
+        System.out.println(doublePrinter.get());
 
-        @Override
-        public boolean add(T t) {
-            return false;
-        }
 
-        @Override
-        public boolean remove(Object o) {
-            return false;
-        }
 
-        @Override
-        public boolean containsAll(Collection<?> c) {
-            return false;
-        }
 
-        @Override
-        public boolean addAll(Collection<? extends T> c) {
-            return false;
-        }
+       /*  List<String> string = new ArrayList<>();
+        string.add("Старая строка");
+        string.add("Новая строка");
+        System.out.println(string);
 
-        @Override
-        public boolean addAll(int index, Collection<? extends T> c) {
-            return false;
-        }
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(123);
+        numbers.add(456);
+        System.out.println(numbers);
 
-        @Override
-        public boolean removeAll(Collection<?> c) {
-            return false;
-        }
+        List<Double> statement= new ArrayList<>();
+        statement.add(1.1);
+        statement.add(2.2);
+        System.out.println(statement);
 
-        @Override
-        public boolean retainAll(Collection<?> c) {
-            return false;
-        }
+        */
 
-        @Override
-        public void clear() {
 
-        }
-
-        @Override
-        public T get(int index) {
-            return null;
-        }
-
-        @Override
-        public T set(int index, T element) {
-            return null;
-        }
-
-        @Override
-        public void add(int index, T element) {
-
-        }
-
-        @Override
-        public T remove(int index) {
-            return null;
-        }
-
-        @Override
-        public int indexOf(Object o) {
-            return 0;
-        }
-
-        @Override
-        public int lastIndexOf(Object o) {
-            return 0;
-        }
-
-        @Override
-        public ListIterator<T> listIterator() {
-            return null;
-        }
-
-        @Override
-        public ListIterator<T> listIterator(int index) {
-            return null;
-        }
-
-        @Override
-        public List<T> subList(int fromIndex, int toIndex) {
-            return null;
-        }
-*/
+    }
 
 }
 
