@@ -1,7 +1,7 @@
 package Generics.Task_2;
 
-class Library {
+public class Library {
 
-    String title;
+    public String title;
 
 }

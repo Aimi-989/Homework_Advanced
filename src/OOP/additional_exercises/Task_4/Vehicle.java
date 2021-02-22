@@ -1,4 +1,4 @@
-package OOP.additional_exercises;
+package OOP.additional_exercises.Task_4;
 
 public interface Vehicle {
 
