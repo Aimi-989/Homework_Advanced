@@ -1,9 +1,8 @@
 package Generics.Task_1;
 
-import java.util.ArrayList;
-import java.util.List;
+import OOP.additional_exercises.Task1.Employee;
 
-public class Printer<T> {
+public class Printer<T> extends Object {
     private T t;
 
     public void set(T t) {
@@ -16,6 +15,14 @@ public class Printer<T> {
 
     public static void main(String[] args) {
 
+        Printer<Employee> p = new Printer<>();
+        Employee em = new Employee();
+        em.setNameSurname("John Doe");
+        em.setAge(35);
+        p.set(em);
+        System.out.println(p.get());
+
+/*
         Printer<String> stringPrinter = new Printer<>();
         stringPrinter.set("Старая строка");
         System.out.println(stringPrinter.get());
@@ -29,9 +36,7 @@ public class Printer<T> {
         System.out.println(doublePrinter.get());
 
 
-
-
-       /*  List<String> string = new ArrayList<>();
+        List<String> string = new ArrayList<>();
         string.add("Старая строка");
         string.add("Новая строка");
         System.out.println(string);

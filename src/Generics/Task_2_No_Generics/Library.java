@@ -1,9 +1,10 @@
-package Generics.Task_2;
+package Generics.Task_2_No_Generics;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Library<T extends LibraryMaterial> {
-   private List<LibraryMaterial> books;
+public class Library {
+   private List<LibraryMaterial> books = new ArrayList<>();
 
    public void putBook(LibraryMaterial book) {
        books.add(book);

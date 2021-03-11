@@ -1,4 +1,4 @@
-package Generics.Task_2;
+package Generics.Task_2_No_Generics;
 
 public class Video extends LibraryMaterial {
 

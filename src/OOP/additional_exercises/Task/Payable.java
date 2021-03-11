@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 
 public interface Payable {
 
-    BigDecimal getSalary();
+    default BigDecimal getSalary() {
+        return new BigDecimal(1200.00);
+    }
 
 }

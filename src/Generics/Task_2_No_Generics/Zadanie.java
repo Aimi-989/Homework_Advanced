@@ -1,4 +1,4 @@
-package Generics.Task_2;
+package Generics.Task_2_No_Generics;
 
 
 public class Zadanie {
@@ -6,7 +6,7 @@ public class Zadanie {
     public static void main(String[] args) {
         Book dickens = new Book();
         dickens.setAuthor("Charles Disckens");
-         Library<Book> library = new Library<>();
+         Library library = new Library();
          library.putBook(dickens);
 
     }
