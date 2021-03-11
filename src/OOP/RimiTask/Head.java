@@ -2,7 +2,7 @@ package OOP.RimiTask;
 
 public class Head extends MainOffice{
 
-    /* private Integer schedule;
+    private Integer schedule;
     private String employment;
     private String dismissal;
     private String problemSolving;
@@ -39,5 +39,4 @@ public class Head extends MainOffice{
         this.problemSolving = problemSolving;
     }
 
-     */
 }
