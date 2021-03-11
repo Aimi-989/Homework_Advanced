@@ -1,6 +1,6 @@
 package OOP.RimiTask;
 
-public class Head extends MainOffice{
+public class Head extends MainOffice {
 
     private Integer schedule;
     private String employment;
