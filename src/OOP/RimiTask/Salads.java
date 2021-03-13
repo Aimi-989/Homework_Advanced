@@ -1,5 +1,5 @@
 package OOP.RimiTask;
 
-public class Salads extends Head {
+class Salads extends Head{
 
     }
