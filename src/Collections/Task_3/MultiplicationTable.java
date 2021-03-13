@@ -1,12 +1,14 @@
 package Collections.Task_3;
 
+//complete the code to print multiplication table till 10x10
+
 /*
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zadanie3 {
-    //complete the code to print multiplication table till 10x10
+public class MultiplicationTable {
+
     public static void testFire() {
 
        List<List<Integer>> mainList = new ArrayList<>();

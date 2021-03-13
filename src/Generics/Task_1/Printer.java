@@ -1,6 +1,6 @@
 package Generics.Task_1;
 
-import OOP.additional_exercises.Task1.Employee;
+import OOP.additional_exercises.Task.Employee;
 
 public class Printer<T> extends Object {
     private T t;
